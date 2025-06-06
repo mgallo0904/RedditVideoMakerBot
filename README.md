@@ -104,5 +104,33 @@ Aman Raza (electro199#8130) - https://github.com/electro199
 Cyteon (cyteon) - https://github.com/cyteon
 
 
+## Options Trading Module
+
+This repository now includes a minimal **AI-powered options trading module** located in
+`options_trading/`. It provides:
+
+- Black–Scholes, binomial and Monte Carlo pricing
+- Real-time Greek calculations
+- Simple strategy recommendations
+- Skeleton machine learning models for price prediction and volatility forecasting
+- A lightweight backtesting engine
+- Free price data via Yahoo Finance using ``yfinance``
+
+### Running the tests
+
+Install requirements and run `pytest`:
+
+```bash
+pip install -r requirements.txt
+pytest
+```
+
+The tests validate the Black–Scholes implementation and delta calculation.
+
+### Fetching data with free APIs
+
+The ``options_trading.data.fetch_price_history`` function retrieves historical prices from Yahoo Finance using the open-source ``yfinance`` package.
+
+
 ## LICENSE
 [Roboto Fonts](https://fonts.google.com/specimen/Roboto/about) are licensed under [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0)
